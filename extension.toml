@@ -7,7 +7,12 @@ repository = "https://github.com/bearcove/kajit-zed"
 authors = ["Amos Wenger <amos@bearcove.eu>"]
 themes = []
 icon_themes = []
-languages = ["languages/kajit-hir"]
+languages = [
+    "languages/kajit-hir",
+    "languages/kajit-asm",
+    "languages/kajit-ir",
+    "languages/kajit-mir",
+]
 capabilities = []
 
 [lib]
@@ -19,7 +24,7 @@ path = "grammars/kajit-hir"
 
 [language_servers.kajit-lsp]
 name = "Kajit LSP"
-languages = ["Kajit HIR"]
+languages = ["Kajit HIR", "Kajit ASM", "Kajit IR", "Kajit MIR"]
 
 [context_servers]
 
