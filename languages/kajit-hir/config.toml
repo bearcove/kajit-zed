@@ -1,6 +1,6 @@
 name = "Kajit HIR"
 language_servers = ["kajit-lsp"]
-path_suffixes = ["vixen-hir"]
+path_suffixes = ["k-hir"]
 line_comments = ["//"]
 block_comments = [["/*", "*/"]]
 tab_size = 2
