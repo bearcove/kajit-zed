@@ -1,0 +1,23 @@
+id = "kajit"
+name = "Kajit"
+version = "0.1.0"
+schema_version = 1
+description = "Kajit language support."
+repository = "https://github.com/bearcove/kajit-zed"
+authors = ["Amos Wenger <amos@bearcove.eu>"]
+themes = []
+icon_themes = []
+languages = ["languages/kajit-hir"]
+capabilities = []
+
+[lib]
+
+[language_servers.kajit-lsp]
+name = "Kajit LSP"
+languages = ["Kajit HIR"]
+
+[context_servers]
+
+[agent_servers]
+
+[slash_commands]

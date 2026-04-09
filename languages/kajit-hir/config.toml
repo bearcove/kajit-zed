@@ -1,0 +1,14 @@
+name = "Kajit HIR"
+language_servers = ["kajit-lsp"]
+path_suffixes = ["vixen-hir"]
+line_comments = ["//"]
+block_comments = [["/*", "*/"]]
+tab_size = 2
+autoclose_before = "]})"
+brackets = [
+    { start = "{", end = "}", close = true, newline = true },
+    { start = "(", end = ")", close = true, newline = false },
+    { start = "[", end = "]", close = true, newline = false },
+    { start = "\"", end = "\"", close = true, newline = false, not_in = ["string"] },
+]
+word_characters = ["_", "-"]
