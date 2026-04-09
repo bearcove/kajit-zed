@@ -1,0 +1,30 @@
+{
+  "name": "tree-sitter-kajit-hir",
+  "version": "0.1.0",
+  "description": "Tree-sitter grammar for Kajit HIR",
+  "license": "MIT OR Apache-2.0",
+  "files": [
+    "grammar.js",
+    "queries/*",
+    "src/**",
+    "tree-sitter.json"
+  ],
+  "devDependencies": {
+    "tree-sitter-cli": "^0.26.0"
+  },
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test",
+    "parse": "tree-sitter parse"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.kajit-hir",
+      "injection-regex": "^(k-hir)$",
+      "file-types": [
+        "k-hir"
+      ],
+      "highlights": "queries/highlights.scm"
+    }
+  ]
+}

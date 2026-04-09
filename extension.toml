@@ -12,6 +12,11 @@ capabilities = []
 
 [lib]
 
+[grammars.kajit_hir]
+repository = "https://github.com/bearcove/kajit-zed"
+rev = "main"
+path = "grammars/kajit-hir"
+
 [language_servers.kajit-lsp]
 name = "Kajit LSP"
 languages = ["Kajit HIR"]

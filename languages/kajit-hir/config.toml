@@ -1,5 +1,6 @@
 name = "Kajit HIR"
 language_servers = ["kajit-lsp"]
+grammar = "kajit_hir"
 path_suffixes = ["k-hir"]
 line_comments = ["//"]
 block_comments = [["/*", "*/"]]
