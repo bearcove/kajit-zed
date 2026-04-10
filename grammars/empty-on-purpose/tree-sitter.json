@@ -2,7 +2,7 @@
   "metadata": {
     "version": "0.1.0",
     "license": "MIT OR Apache-2.0",
-    "description": "Tree-sitter grammar for Kajit HIR",
+    "description": "Empty Tree-sitter grammar for Kajit HIR; semantic coloring comes from Kajit LSP.",
     "authors": [],
     "links": {
       "repository": "https://github.com/bearcove/kajit-zed"
@@ -12,9 +12,8 @@
     {
       "name": "kajit_hir",
       "scope": "source.kajit-hir",
-      "injection-regex": "^(k-hir)$",
-      "file-types": ["k-hir"],
-      "highlights": "queries/highlights.scm"
+      "injection-regex": "^(k-hir|k-mir)$",
+      "file-types": ["k-hir", "k-mir"]
     }
   ]
 }

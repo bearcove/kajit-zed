@@ -9,10 +9,12 @@ This minimal extension wires Kajit source files to `kajit lsp`:
 - `.k-ir`
 - `.k-mir`
 
-It includes a tiny Tree-sitter grammar only because Zed requires one; the
-grammar is intentionally not used for highlighting.
+The Tree-sitter grammar is intentionally empty. It exists only because Zed
+requires every language package to ship a grammar, and it must not be used for
+coloring or highlights.
 
-To see semantic highlighting, enable semantic tokens in Zed settings:
+All coloring comes from Kajit LSP semantic tokens. Enable semantic tokens in
+Zed settings:
 
 ```json
 {

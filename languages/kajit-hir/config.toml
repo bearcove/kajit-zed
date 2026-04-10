@@ -1,5 +1,7 @@
 name = "Kajit HIR"
 language_servers = ["kajit-lsp"]
+# The Tree-sitter grammar is intentionally empty. Keep coloring in the LSP
+# semantic-token path, not in Tree-sitter.
 grammar = "kajit_hir"
 path_suffixes = ["k-hir"]
 line_comments = ["//"]

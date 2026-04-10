@@ -1,7 +1,7 @@
 {
   "name": "tree-sitter-kajit-hir",
   "version": "0.1.0",
-  "description": "Tree-sitter grammar for Kajit HIR",
+  "description": "Empty Tree-sitter grammar for Kajit HIR; semantic coloring comes from Kajit LSP.",
   "license": "MIT OR Apache-2.0",
   "files": [
     "grammar.js",
@@ -20,11 +20,11 @@
   "tree-sitter": [
     {
       "scope": "source.kajit-hir",
-      "injection-regex": "^(k-hir)$",
+      "injection-regex": "^(k-hir|k-mir)$",
       "file-types": [
-        "k-hir"
-      ],
-      "highlights": "queries/highlights.scm"
+        "k-hir",
+        "k-mir"
+      ]
     }
   ]
 }
