@@ -20,7 +20,7 @@ capabilities = []
 # Tree-sitter is present only to satisfy Zed's language-package requirement.
 # This grammar is intentionally empty. Kajit highlighting must come exclusively
 # from LSP semantic tokens, not Tree-sitter queries.
-[grammars.empty_on_purpose]
+[grammars.kajit_hir]
 repository = "https://github.com/bearcove/kajit-zed"
 rev = "main"
 path = "grammars/empty-on-purpose"
